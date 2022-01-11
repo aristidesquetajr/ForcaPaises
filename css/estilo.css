@@ -1,0 +1,106 @@
+@charset "utf8";
+
+* {
+    outline: none;
+}
+
+body {
+    background: url("../img/mundo.png") top center;
+    font: normal 16pt 'Arial';
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+#main {
+    width: 645px;
+    border: 2px solid #f0f0f0;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: #106ea0;
+}
+
+@media screen and (max-width: 768px) {
+    #main {width: 100%}
+}
+
+/* Cabecalho */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header div {
+    width: 100%;
+}
+
+header div input {
+    border-radius: 20px;
+    font-weight: bold;
+    border: 4px double steelblue;
+}
+
+header #texto  {
+    width: calc(100% - 100px);
+    height: 25px;
+    line-height: 18px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+header #dica {
+    padding: 6px;
+}
+
+/* Fim Cabecalho */
+
+/* Corpo Princial */
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teclado {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.teclado li {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 12px;
+    margin: 4px 2px;
+    width: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font: bold .95em Arial;
+    color: black !important;
+}
+
+li:hover {
+    border: .1px solid #f0f0f0;
+    font-size: 1em;
+    margin: 2px 1px;
+}
+
+li.finally {
+    color: #fff !important;
+}
+
+li.yes {
+    background-color: #148f14;
+}
+
+li.error {
+    background-color: #921414;
+}
+
+/* Fim Corpo Principal */
